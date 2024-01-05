@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Animated Stopwatch</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap">
+</head>
+<body>
+    <div class="background">
+        <h1 class="heading">Improvising towards growth</h1>
+        <div class="watch-container">
+            <div class="watch" id="watch">
+                <div class="display" id="display">00:00:00</div>
+                <button onclick="startStopwatch()">Start</button>
+                <button onclick="pauseStopwatch()">Pause</button>
+                <button onclick="resetStopwatch()">Reset</button>
+                <button onclick="recordLapTime()">Lap</button>
+                <ul id="lapTimes"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
