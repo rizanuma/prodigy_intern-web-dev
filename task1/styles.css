@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url("C:\\Users\\putariza\\Documents\\Documents\\react web\\prodigyintern\\task1\\watercolor+fitness.jpg"); /* Add your background image URL */
+    background-size: cover;
+    background-position: calc();
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 15px 0;
+    z-index: 1000;
+    transition: background-color 0.5s;
+}
+
+.navbar ul {
+    list-style: upper-alpha;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.5s;
+}
+
+.navbar a:hover {
+    color: #42A5F5;
+}
+
+.landing-page {
+    text-align: center;
+    padding: 150px;
+    color: white;
+}
+
+.about-page, .services-page, .contact-page {
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    margin: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-page {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly less transparent white background for about page */
+}
+
+.services-page {
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly less transparent white background for services page */
+}
+
+.contact-page {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for contact page */
+}
+
+.about-page h2, .services-page h2, .contact-page h2 {
+    color: #333;
+}
+
+.about-page p, .services-page p, .contact-page p {
+    color: #555;
+}
+
