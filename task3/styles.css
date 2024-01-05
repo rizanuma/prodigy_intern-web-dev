@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("C:\\Users\\putariza\\OneDrive\\Pictures\\download.png"); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-image 0.5s; /* Add transition for smooth image changes */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fcfcfc;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border: 1px solid #333;
+    font-size: 4em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+    background-color: #E0E0E0;
+}
+
+.cell.selected {
+    background-color: #5263b0; /* Green color when selected */
+    color: #FFF;
+}
+
+.cell.selected.X {
+    color: #020202 !important; /* Orange for X */
+}
+
+.cell.selected.O {
+    color: #ffeffd !important; /* Yellow for O */
+}
+
+.result {
+    font-size: 4.5em;
+    margin-top: 20px;
+    color: #c4dcc2;
+    opacity: 20; /* Initial opacity for the animation effect */
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.result.show {
+    opacity: 5;
+    transform: scale(1.2); /* Scale effect for the pop-up */
+}
